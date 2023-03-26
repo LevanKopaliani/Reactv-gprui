@@ -1,0 +1,36 @@
+.homepage {
+  background-color: #13184e;
+  min-height: 100vh;
+  .homepagevideo-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 1;
+    img {
+      max-width: 1101px;
+      width: 100%;
+    }
+    .homepagevideobutton {
+      position: absolute;
+      bottom: -31px;
+      right: 72px;
+    }
+  }
+  .homepagetext-container {
+    .homepage-title {
+      font-family: "Gilroy-Bold", sans-serif;
+      font-size: 96px;
+      line-height: 116px;
+      letter-spacing: 0.14em;
+      color: #ffffff;
+      p {
+        // display: inline-block;
+        // align-items: center;
+        text-align: center;
+        display: inline-flex;
+        gap: 35px;
+      }
+    }
+  }
+}

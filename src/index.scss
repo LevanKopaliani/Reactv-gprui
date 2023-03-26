@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "gilroy-bold";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Gilroy-Bold"), url(./assets/Fonts/Gilroy-Bold.ttf) format("woff");
+}
+@font-face {
+  font-family: "gilroy-heavy";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Gilroy-Heavy"),
+    url(./assets/Fonts/Gilroy-Heavy.woff) format("woff");
+}
+@font-face {
+  font-family: "gilroy-light";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Gilroy-Light"),
+    url(./assets/Fonts/Gilroy-Light.woff) format("woff");
+}
+@font-face {
+  font-family: "gilroy-medium";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Gilroy-Medium"),
+    url(./assets/Fonts/Gilroy-Medium.woff) format("woff");
+}
+@font-face {
+  font-family: "gilroy-regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Gilroy-Regular"),
+    url(./assets/Fonts/Gilroy-Regular.woff) format("woff");
+}
+
+:root {
+  font-family: Gilroy-Regular, sans-serif;
+  font-weight: 400;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root {
+  // max-width: 1280px;
+  // margin: 0 auto;
+  // padding: 2rem;
+  // text-align: center;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+  @media (max-width: 768px) {
+    padding: 0 44px;
+  }
+  @media (max-width: 480px) {
+    padding: 0 16px;
+  }
+}
+.wrapper-p {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1104px;
+  margin: 0 auto;
+  // padding: 0 88px;
+}
