@@ -13,7 +13,7 @@ const CtaButton = ({ className, text }) => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g clip-path="url(#clip0_1_181)">
+          <g clipPath="url(#clip0_1_181)">
             <path
               d="M10 20C15.5229 20 20 15.5229 20 10C20 4.47715 15.5229 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5229 4.47715 20 10 20Z"
               fill="#1E41C8"
@@ -21,16 +21,16 @@ const CtaButton = ({ className, text }) => {
             <path
               d="M6.03906 10.209H13.5391"
               stroke="white"
-              stroke-width="1.66667"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.66667"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
             <path
               d="M9.78906 6.45898L13.5391 10.209L9.78906 13.959"
               stroke="white"
-              stroke-width="1.66667"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.66667"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </g>
           <defs>
