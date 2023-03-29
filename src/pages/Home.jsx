@@ -8,7 +8,6 @@ import CtaButton from "../components/CtaButton";
 import teamsTitleArrow from "../assets/img/teamstitlearrow.svg";
 import SliderLeft from "../assets/img/SliderLeft.svg";
 import SliderRight from "../assets/img/SliderRight.svg";
-
 import teamsSlider0 from "../assets/img/teamsslider0.svg";
 import teamsSlider1 from "../assets/img/teamsslider1.svg";
 
@@ -17,6 +16,7 @@ import RaceSlider from "../components/RaceSlider";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import { Navigation } from "swiper";
+import HomeNews from "./sections/HomeNews";
 ///
 const Home = () => {
   const swiper = useSwiper();
@@ -66,83 +66,86 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <div className="wrapper-p">
-        <section className="teams-section ">
-          <RaceSlider className="home-race-slider" />
-          <div className="teams-slider-container">
-            <div className="teams-slider-title-container container">
-              <h2 className="teams-slider-title">
-                2024 GPR
-                <br /> Teams
-                <span>
-                  <img src={teamsTitleArrow} alt="" />
-                </span>
-              </h2>
-              <div className="slider-controls-container">
-                <p className="see-all-teams">SEE ALL TEAMS</p>
-                <div className="slider-controls">
-                  <img src={SliderLeft} alt="" className="prevel" />
-                  <img src={SliderRight} alt="" className="nextel" />
+      <div className="">
+        <section className="teams-section">
+          <div className="wrapper-p">
+            <RaceSlider className="home-race-slider" />
+            <div className="teams-slider-container">
+              <div className="teams-slider-title-container container">
+                <h2 className="teams-slider-title">
+                  2024 GPR
+                  <br /> Teams
+                  <span>
+                    <img src={teamsTitleArrow} alt="" />
+                  </span>
+                </h2>
+                <div className="slider-controls-container">
+                  <p className="see-all-teams">SEE ALL TEAMS</p>
+                  <div className="slider-controls">
+                    <img src={SliderLeft} alt="" className="prevel" />
+                    <img src={SliderRight} alt="" className="nextel" />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="teams-slider-body">
-              <Swiper
-                modules={[Navigation]}
-                spaceBetween={windowSize < 600 ? 12 : 120}
-                slidesPerView={windowSize < 560 ? 1 : 1.5}
-                navigation={{ nextEl: ".nextel", prevEl: ".prevel" }}
-                // centeredSlides={true}
-              >
-                <SwiperSlide>
-                  <div className="teams-slider-item">
-                    <img src={teamsSlider0} alt="" />
-                    <div className="teams-slider-item-text-container">
-                      <h2 className="sldier-item-title">
-                        Rowing Oceans 4 Women
-                      </h2>
-                      <div className="slider-item-subtitle-container">
-                        <p>Country : USA</p>
-                        <p>Entry : Fours</p>
-                        <p>IG: @rowingoceans4women</p>
+              <div className="teams-slider-body">
+                <Swiper
+                  modules={[Navigation]}
+                  spaceBetween={windowSize < 600 ? 12 : 120}
+                  slidesPerView={windowSize < 560 ? 1 : 1.5}
+                  navigation={{ nextEl: ".nextel", prevEl: ".prevel" }}
+                  // centeredSlides={true}
+                >
+                  <SwiperSlide>
+                    <div className="teams-slider-item">
+                      <img src={teamsSlider0} alt="" />
+                      <div className="teams-slider-item-text-container">
+                        <h2 className="sldier-item-title">
+                          Rowing Oceans 4 Women
+                        </h2>
+                        <div className="slider-item-subtitle-container">
+                          <p>Country : USA</p>
+                          <p>Entry : Fours</p>
+                          <p>IG: @rowingoceans4women</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="teams-slider-item">
-                    <img src={teamsSlider1} alt="" />
-                    <div className="teams-slider-item-text-container">
-                      <h2 className="sldier-item-title">
-                        Rowing Oceans 4 Women
-                      </h2>
-                      <div className="slider-item-subtitle-container">
-                        <p>Country : USA</p>
-                        <p>Entry : Fours</p>
-                        <p>IG: @rowingoceans4women</p>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="teams-slider-item">
+                      <img src={teamsSlider1} alt="" />
+                      <div className="teams-slider-item-text-container">
+                        <h2 className="sldier-item-title">
+                          Rowing Oceans 4 Women
+                        </h2>
+                        <div className="slider-item-subtitle-container">
+                          <p>Country : USA</p>
+                          <p>Entry : Fours</p>
+                          <p>IG: @rowingoceans4women</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="teams-slider-item">
-                    <img src={teamsSlider1} alt="" />
-                    <div className="teams-slider-item-text-container">
-                      <h2 className="sldier-item-title">
-                        Rowing Oceans 4 Women
-                      </h2>
-                      <div className="slider-item-subtitle-container">
-                        <p>Country : USA</p>
-                        <p>Entry : Fours</p>
-                        <p>IG: @rowingoceans4women</p>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="teams-slider-item">
+                      <img src={teamsSlider1} alt="" />
+                      <div className="teams-slider-item-text-container">
+                        <h2 className="sldier-item-title">
+                          Rowing Oceans 4 Women
+                        </h2>
+                        <div className="slider-item-subtitle-container">
+                          <p>Country : USA</p>
+                          <p>Entry : Fours</p>
+                          <p>IG: @rowingoceans4women</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-              </Swiper>
+                  </SwiperSlide>
+                </Swiper>
+              </div>
             </div>
           </div>
         </section>
+        <HomeNews />
       </div>
     </div>
   );
