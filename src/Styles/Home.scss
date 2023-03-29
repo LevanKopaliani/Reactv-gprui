@@ -178,12 +178,17 @@
     }
   }
   .teams-section {
+    padding-bottom: 70px;
+    background-color: #f6f6fb;
     position: relative;
-    max-height: 1634px;
+    min-height: 1634px;
+    background-image: url(../assets/img/teamstitlebackimg.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
     &::before {
       content: "TEAMS";
       position: absolute;
-      z-index: -1;
+      z-index: 0;
       font-family: "Gilroy-Bold", sans-serif;
       font-size: 418px;
       line-height: 505px;
@@ -191,37 +196,159 @@
       color: #ececf3;
       transform-origin: bottom;
       transform: rotate(-90deg) translateX(-50%) translateY(-50%);
-      bottom: 50px;
+      // bottom: 50px;
       left: 0;
       @media (max-width: 480px) {
         font-size: 250px;
         line-height: 302px;
         bottom: 30px;
 
-        transform: rotate(-90deg) translateX(-50%) translateY(-60%);
+        transform: rotate(-90deg) translateX(50%) translateY(-60%);
       }
     }
     .home-race-slider {
-      top: -10%;
+      top: -230px;
       @media (max-width: 1024px) {
-        top: 0%;
+        top: 0px;
       }
     }
-    .backtext {
-      transform-origin: top left;
-      position: absolute;
-      font-family: "Gilroy-Bold", sans-serif;
-      font-size: 418px;
-      line-height: 505px;
-      text-transform: uppercase;
-      color: #ececf3;
-      transform: rotate(-90deg) translateY(-100%);
-      bottom: 50px;
-      left: 0;
-      @media (max-width: 480px) {
-        font-size: 250px;
-        line-height: 302px;
-        transform: rotate(-90deg) translateY(-120%);
+    .teams-slider-container {
+      position: relative;
+
+      .teams-slider-title-container {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 66px;
+        flex-wrap: wrap;
+        @media (max-width: 1024px) {
+          margin-top: 64px;
+        }
+        .teams-slider-title {
+          max-width: 369px;
+          font-family: "Gilroy-Bold", sans-serif;
+          font-size: 64px;
+          line-height: 77px;
+          letter-spacing: 0.14em;
+          text-transform: uppercase;
+          color: #1b1a20;
+          @media (max-width: 1024px) {
+            font-size: 48px;
+            line-height: 120%;
+          }
+          @media (max-width: 768px) {
+            font-size: 38px;
+          }
+          @media (max-width: 480px) {
+            font-size: 34px;
+            img {
+              width: 70px;
+            }
+          }
+        }
+        .slider-controls-container {
+          display: flex;
+          justify-content: space-between;
+          gap: 47px;
+          flex: 1;
+          justify-content: flex-end;
+          .see-all-teams {
+            font-family: "Gilroy-Bold", sans-serif;
+            font-size: 16px;
+            line-height: 130%;
+            letter-spacing: 0.14em;
+            text-decoration-line: underline;
+            text-transform: uppercase;
+            color: #d95234;
+            cursor: pointer;
+            white-space: nowrap;
+          }
+          .slider-controls {
+            display: flex;
+            gap: 40px;
+            cursor: pointer;
+          }
+        }
+      }
+      .teams-slider-body {
+        position: relative;
+        margin-left: 168px;
+        padding: 70px 0;
+        @media (max-width: 1080px) {
+          margin-left: 24px;
+        }
+        .swiper-slide.swiper-slide-active {
+          @media (max-width: 1080px) {
+            // margin-right: 36px !important;
+            min-width: 327px !important;
+          }
+        }
+        .teams-slider-item {
+          position: relative;
+          z-index: 1;
+          min-width: 327px;
+          min-height: 238px;
+          max-width: 715px;
+          // min-height: 519px;
+          img {
+            display: block;
+            width: 100%;
+          }
+          .swiper-slide {
+            min-width: 327px !important;
+          }
+          .teams-slider-item-text-container {
+            position: absolute;
+            z-index: 999 !important;
+            bottom: 38px;
+            right: -120px;
+            max-width: 327px;
+            max-height: 324px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 55px 34px;
+            background-color: #d95234;
+            @media (max-width: 1080px) {
+              right: 0;
+              left: 0;
+              margin-left: auto;
+              margin-right: auto;
+              bottom: -60%;
+              position: relative;
+              transform: translateY(-50%);
+            }
+
+            @media (max-width: 960px) {
+              padding: 30px 26px;
+              max-width: 294px;
+              max-height: 263px;
+            }
+            .sldier-item-title {
+              font-family: "Gilroy-Medium", sans-serif;
+              font-size: 32px;
+              line-height: 119%;
+              letter-spacing: 0.24em;
+              text-transform: uppercase;
+              color: #ffffff;
+              @media (max-width: 960px) {
+                font-size: 24px;
+              }
+            }
+            .slider-item-subtitle-container {
+              font-family: "Gilroy-Medium";
+              font-size: 14px;
+              line-height: 24px;
+              letter-spacing: 0.12em;
+              text-transform: uppercase;
+              color: #ffffff;
+              @media (max-width: 960px) {
+                font-size: 12px;
+              }
+            }
+          }
+        }
       }
     }
   }
