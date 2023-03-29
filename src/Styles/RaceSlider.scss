@@ -1,0 +1,97 @@
+.race-slider {
+  position: relative;
+  max-width: 1252px;
+  max-height: 803px;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+  .race-slider-img {
+    position: relative;
+    .race-slider-img-number {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-family: "Gilroy-Medium";
+      font-size: 16px;
+      line-height: 135%;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+  }
+
+  .race-slider-text {
+    position: absolute;
+    z-index: 9;
+    bottom: 0;
+    right: 0;
+    background-color: #d95234;
+    max-width: 522px;
+    width: 100%;
+    max-height: 573px;
+    height: 100%;
+    padding: 100px 62px;
+    @media (max-width: 1024px) {
+      position: relative;
+      max-width: unset;
+      max-height: unset;
+    }
+    @media (max-width: 480px) {
+      padding: 65px 24px;
+      display: flex;
+      flex-direction: column;
+    }
+    .race-slider-title {
+      font-family: "Gilroy-Bold", sans-serif;
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #ffffff;
+      @media (max-width: 480px) {
+        font-size: 24px;
+        line-height: 29px;
+      }
+    }
+    .race-slider-subtitle {
+      margin-top: 23px;
+      font-family: "Gilroy-Medium", sans-serif;
+      font-size: 20px;
+      line-height: 180%;
+      color: #e2f7ff;
+      @media (max-width: 480px) {
+        font-size: 18px;
+      }
+    }
+    .race-slider-readmore {
+      cursor: pointer;
+      margin-top: 31px;
+      font-family: "Gilroy-Medium", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 135%;
+      text-decoration-line: underline;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+    .race-slider-controls {
+      cursor: pointer;
+      position: absolute;
+      bottom: 26px;
+      right: 33px;
+      width: 60px;
+      height: 22px;
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 480px) {
+        position: relative;
+        bottom: unset;
+        right: unset;
+        margin-top: 48px;
+        align-self: center;
+      }
+    }
+  }
+}
