@@ -26,13 +26,13 @@
     margin-top: 70px;
     display: flex;
     justify-content: space-between;
-    gap: 16px;
+    gap: 64px;
     flex-wrap: wrap;
     .news-img-container {
       max-width: 536px;
+      max-height: 446px;
       position: relative;
       img {
-        display: block;
         width: 100%;
       }
       .news-img-title {
@@ -127,6 +127,12 @@
           height: 48px;
         }
       }
+    }
+  }
+  .press-slider {
+    margin-top: 180px;
+    @media (max-width: 768px) {
+      margin-top: 90px;
     }
   }
 }

@@ -4,6 +4,7 @@ import newsImg from "../../assets/img/newsvideo.svg";
 import newsReadmoreArrow from "../../assets/img/newsreadmorearrow.svg";
 import ArrowLeft from "../../assets/img/sliderarrleft.svg";
 import ArrowRight from "../../assets/img/sliderarrright.svg";
+import PressSlider from "../../components/PressSlider";
 
 const HomeNews = () => {
   return (
@@ -58,6 +59,7 @@ const HomeNews = () => {
           </div>
         </div>
       </div>
+      <PressSlider className={"press-slider"} />
     </section>
   );
 };
