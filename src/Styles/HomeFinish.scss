@@ -3,26 +3,120 @@
   background-color: #f6f6fb;
   position: relative;
   z-index: 1;
-  padding: 108px 0 65px 0;
+  //   padding: 108px 0 65px 0;
+  padding-top: 92px;
   &::before {
     content: "Finish";
     position: absolute;
-    z-index: 0;
+    z-index: -1;
     font-family: "Gilroy-Bold", sans-serif;
     font-size: 418px;
     line-height: 505px;
     text-transform: uppercase;
     color: #ececf3;
     transform-origin: bottom;
-    transform: rotate(-90deg) translateY(-50%); //translateX(-50%)
+    transform: rotate(-90deg) translateY(-50%) translateX(0%); //translateX(-50%)
     // bottom: 50px;
     left: 0;
     @media (max-width: 480px) {
       font-size: 250px;
       line-height: 302px;
-      bottom: 30px;
+      //   bottom: 30px;
 
-      transform: rotate(-90deg) translateX(50%) translateY(-60%);
+      //   transform: rotate(-90deg) translateX(50%) translateY(-60%);
+    }
+  }
+  .finish-section-content {
+    min-height: 975px;
+    background-image: url(../assets/img/finishback.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    .finish-section-heading-container {
+      margin-top: 224px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 64px;
+      @media (max-width: 480px) {
+        margin-top: 90px;
+        font-size: 34px;
+        line-height: 41px;
+      }
+      .finish-section-title {
+        max-width: 385px;
+        font-family: "Gilroy-Bold", sans-serif;
+        font-size: 64px;
+        line-height: 77px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: #1b1a20;
+        @media (max-width: 480px) {
+          font-size: 34px;
+          line-height: 41px;
+        }
+      }
+      .practice-years {
+        display: flex;
+        max-width: 240px;
+        height: 55px;
+        justify-content: space-between;
+        gap: 70px;
+        font-family: "Gilroy-Bold", sans-serif;
+        font-size: 40px;
+        line-height: 48px;
+        text-transform: uppercase;
+        color: #d2d2da;
+
+        p.active-year {
+          color: #1b1a20;
+          border-bottom: 2px solid #d95234;
+        }
+      }
+    }
+    .finish-section-slider-container {
+      width: 1250px;
+      margin-top: 70px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      .finish-section-slider-item {
+        max-width: 400px;
+        max-height: 527px;
+        .finishers-title {
+          margin-top: 52px;
+          display: flex;
+          justify-content: space-between;
+          gap: 16px;
+          flex-wrap: wrap;
+          h2 {
+            font-family: "Gilroy-Bold", sans-serif;
+            font-size: 32px;
+            line-height: 39px;
+            text-transform: capitalize;
+            color: #1b1a20;
+          }
+          .record-set {
+            max-width: 119px;
+            height: 28px;
+            padding: 7px 10px;
+            background: #d95234;
+            border-radius: 2px;
+            font-family: "Gilroy-Medium", sans-serif;
+            font-size: 10px;
+            line-height: 135%;
+            text-transform: uppercase;
+            color: #ffffff;
+          }
+        }
+        .race-time {
+          margin-top: 14px;
+          font-family: "Gilroy-Regular", sans-serif;
+          font-size: 16px;
+          line-height: 135%;
+          text-transform: uppercase;
+          color: #b3b3c8;
+        }
+      }
     }
   }
 }
