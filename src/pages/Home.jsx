@@ -17,6 +17,7 @@ import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import { Navigation } from "swiper";
 import HomeNews from "./sections/HomeNews";
+import HomeFinish from "./sections/HomeFinish";
 ///
 const Home = () => {
   const swiper = useSwiper();
@@ -146,6 +147,7 @@ const Home = () => {
           </div>
         </section>
         <HomeNews />
+        <HomeFinish />
       </div>
     </div>
   );

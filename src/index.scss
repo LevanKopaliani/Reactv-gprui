@@ -61,14 +61,17 @@
 .pdl {
   padding: 0 24px;
 }
+.relative {
+  position: relative;
+}
 .container {
   max-width: 1104px;
   margin: 0 auto;
   padding: 0 24px;
   // padding: 0 88px;
-}
-.relative {
-  position: relative;
+  @media (max-width: 330px) {
+    padding: 0 16px;
+  }
 }
 
 .title,

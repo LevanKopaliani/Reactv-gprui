@@ -59,6 +59,7 @@ const HomeNews = () => {
           </div>
         </div>
       </div>
+
       <PressSlider className={"press-slider"} />
     </section>
   );
