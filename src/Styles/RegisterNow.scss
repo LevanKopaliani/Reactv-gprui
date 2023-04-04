@@ -1,0 +1,59 @@
+.reisternow {
+  min-height: 760px;
+  background-color: #f6f6fb;
+  .reisternow-container {
+    position: relative;
+    display: flex;
+    @media (max-width: 1080px) {
+      flex-direction: column;
+    }
+
+    img {
+      max-width: 1252px;
+      display: block;
+      width: 100%;
+    }
+    .registernow-info-container {
+      position: absolute;
+      right: 0;
+      bottom: -91px;
+      max-width: 708px;
+      max-height: 624px;
+      height: 100%;
+      background-color: #d95234;
+      color: white;
+      padding: 133px 80px 91px 108px;
+      background-image: url(../assets/img/registernowbackquotes.svg);
+      background-position: top left;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 32px;
+      @media (max-width: 1080px) {
+        position: relative;
+        bottom: unset;
+        max-width: 100%;
+      }
+      @media (max-width: 768px) {
+        padding: 70px 37px;
+        max-height: 100%;
+      }
+
+      p {
+        font-family: "Gilroy-Regular", sans-serif;
+        font-size: 32px;
+        line-height: 50px;
+      }
+      .register-button {
+        .text-container {
+          background-color: #fff;
+          color: #000000;
+        }
+        .icon-container {
+          background-color: #1e41c8;
+        }
+      }
+    }
+  }
+}

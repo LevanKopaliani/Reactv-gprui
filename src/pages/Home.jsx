@@ -18,6 +18,7 @@ import "swiper/css";
 import { Navigation } from "swiper";
 import HomeNews from "./sections/HomeNews";
 import HomeFinish from "./sections/HomeFinish";
+import RegisterNow from "./sections/RegisterNow";
 ///
 const Home = () => {
   const swiper = useSwiper();
@@ -148,6 +149,7 @@ const Home = () => {
         </section>
         <HomeNews />
         <HomeFinish />
+        <RegisterNow />
       </div>
     </div>
   );
