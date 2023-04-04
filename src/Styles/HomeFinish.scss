@@ -73,27 +73,57 @@
         }
       }
     }
-    .finish-section-slider-container {
-      width: 1250px;
-      margin-top: 70px;
+    .finish-section-slider-wrapper {
+      max-width: 1440px;
+      width: 100%;
+      margin: 0 auto;
       display: flex;
       justify-content: flex-end;
+
+      @media (max-width: 1080px) {
+        padding: 0 24px;
+      }
+      @media (max-width: 330px) {
+        padding: 0 16px;
+      }
+    }
+    .finish-section-slider-container {
+      max-width: 1040px;
+      margin-top: 70px;
+      display: flex;
+      // justify-content: flex-end;
       gap: 20px;
+      overflow: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-padding: 50%;
+
       .finish-section-slider-item {
+        scroll-snap-align: start;
         max-width: 400px;
-        max-height: 527px;
+        // max-height: 527px;
+        img {
+          display: block;
+          width: 100%;
+        }
         .finishers-title {
           margin-top: 52px;
           display: flex;
           justify-content: space-between;
           gap: 16px;
           flex-wrap: wrap;
+          @media (max-width: 480px) {
+            flex-direction: column;
+          }
           h2 {
             font-family: "Gilroy-Bold", sans-serif;
             font-size: 32px;
             line-height: 39px;
             text-transform: capitalize;
             color: #1b1a20;
+            @media (max-width: 480px) {
+              font-size: 24px;
+              line-height: 29px;
+            }
           }
           .record-set {
             max-width: 119px;
@@ -115,6 +145,9 @@
           line-height: 135%;
           text-transform: uppercase;
           color: #b3b3c8;
+          @media (max-width: 480px) {
+            font-size: 16px;
+          }
         }
       }
     }
