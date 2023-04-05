@@ -1,12 +1,15 @@
 import React from "react";
 import "../Styles/Contact.scss";
 import dropArrow from "../assets/img/droparrow.svg";
+import Email from "../assets/img/mail.svg";
+import CtaButton from "../components/CtaButton";
+import RegisterNow from "./sections/RegisterNow";
 
 const Contact = () => {
   return (
     <div className="contactpage">
       <div className="wrapper-p">
-        <div className="contact-heading-section">
+        <div className="contact-heading-section container">
           <h1 className="contact-title title">CONTACT</h1>
           <p className="contact-subtitle">LET US KNOW HOW WE CAN HELP</p>
         </div>
@@ -25,7 +28,11 @@ const Contact = () => {
                 <input type="text" placeholder="First Name" />
                 <input type="text" placeholder="Last Name" />
               </div>
-              <input type="email" placeholder="Email address" />
+              <span>
+                <img src={Email} alt="" />
+                <input type="email" placeholder="Email address" />
+              </span>
+
               <input type="text" placeholder="Subject/Topic" />
               <textarea
                 name="openfield"
@@ -34,10 +41,16 @@ const Contact = () => {
                 rows="10"
                 placeholder="Open field"
               ></textarea>
+              <CtaButton
+                className={"submit-button"}
+                text={"submit"}
+                name={"register"}
+              />
             </form>
           </div>
         </div>
       </div>
+      <RegisterNow />
     </div>
   );
 };
