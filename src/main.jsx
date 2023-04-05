@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import "./index.scss";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
+import Contact from "./pages/Contact";
 
 const Applayout = () => {
   return (
@@ -24,6 +25,10 @@ const router = createBrowserRouter(
         {
           path: "/",
           element: <Home />,
+        },
+        {
+          path: "/contact",
+          element: <Contact />,
         },
       ],
     },
